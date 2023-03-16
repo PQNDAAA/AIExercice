@@ -7,7 +7,6 @@ def GenerateBuilding(asset_package, asset_name):
     factory = unreal.BlueprintFactory()
     factory_1 = unreal.DataAssetFactory()
     factory.set_editor_property("parent_class",parent)
-    factory_1.context_class()
 
     unreal.AssetToolsHelpers.get_asset_tools().create_asset("DA_"+asset_name,asset_package,None,factory_1)
     unreal.AssetToolsHelpers.get_asset_tools().create_asset(asset_name,asset_package,None,factory)
@@ -27,5 +26,40 @@ def printBlueprint():
 
         print (bcd.get_class())
         print (bcd.get_class().get_name())
+
+def editVariables(pathbuilding):
+
+    # get the generated class of the Blueprint (note the _C)
+    bp_gc = unreal.load_object(None, pathbuilding)
+    # get the Class Default Object (CDO) of the generated class
+    bp_cdo = unreal.get_default_object(bp_gc)
+
+    return bp_cdo.get_editor_property("villagersMax")
+        # set the default property values
+    #bp_cdo.set_editor_property("villagersMax", 1)
+
+
+def SetVillagersMax(pathbuilding,villagers):
+     # get the generated class of the Blueprint (note the _C)
+    bp_gc = unreal.load_object(None, pathbuilding)
+    # get the Class Default Object (CDO) of the generated class
+    bp_cdo = unreal.get_default_object(bp_gc)
+    bp_cdo.set_editor_property("villagersMax", villagers)
+
+def SetStaticMesh(pathbuilding,sm):
+    # get the generated class of the Blueprint (note the _C)
+    bp_gc = unreal.load_object(None, pathbuilding)
+    # get the Class Default Object (CDO) of the generated class
+    bp_cdo = unreal.get_default_object(bp_gc)
+    bp_cdo.set_editor_property("Static_Mesh_Reference", sm)
+
+def GetStaticMesh(pathbuilding):
+
+# get the generated class of the Blueprint (note the _C)
+    bp_gc = unreal.load_object(None, pathbuilding)
+    # get the Class Default Object (CDO) of the generated class
+    bp_cdo = unreal.get_default_object(bp_gc)
+    
+    return bp_cdo.get_editor_property("Static_Mesh_Reference")
 
 
