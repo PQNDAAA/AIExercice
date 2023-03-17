@@ -25,7 +25,7 @@ def printBlueprint():
         print (bcd.get_class().get_name())
 
 @unreal.ustruct()
-class BasicStatsStruct(unreal.StructBase):
+class BasicStruct(unreal.StructBase):
     some_health = unreal.uproperty(float)
     some_attack = unreal.uproperty(float)
     some_defense = unreal.uproperty(float)  
@@ -34,7 +34,7 @@ class BasicStatsStruct(unreal.StructBase):
 @unreal.uclass()
 class PythonTestClass(unreal.BlueprintFunctionLibrary):
  
-    @unreal.ufunction(static = True, params = [str], ret = BasicStatsStruct)
+    @unreal.ufunction(static = True, params = [str], ret = BasicStruct)
     def editVariables(pathbuilding):
 
     # get the generated class of the Blueprint (note the _C)
@@ -46,7 +46,7 @@ class PythonTestClass(unreal.BlueprintFunctionLibrary):
         attack = bp_cdo.get_editor_property("Attack")
         defense = bp_cdo.get_editor_property("Defense")
 
-        struct = BasicStatsStruct()
+        struct = BasicStruct()
 
         struct.some_health = health
         struct.some_attack = attack
@@ -70,14 +70,5 @@ def SetStaticMesh(pathbuilding,sm):
     # get the Class Default Object (CDO) of the generated class
     bp_cdo = unreal.get_default_object(bp_gc)
     bp_cdo.set_editor_property("Static_Mesh_Reference", sm)
-
-def GetStaticMesh(pathbuilding):
-
-# get the generated class of the Blueprint (note the _C)
-    bp_gc = unreal.load_object(None, pathbuilding)
-    # get the Class Default Object (CDO) of the generated class
-    bp_cdo = unreal.get_default_object(bp_gc)
-    
-    return 
 
 
