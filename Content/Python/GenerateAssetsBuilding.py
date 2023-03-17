@@ -5,14 +5,11 @@ def GenerateBuilding(asset_package, asset_name):
   
     parent = unreal.EditorAssetLibrary.load_blueprint_class("/Game/BP_Items/Items/BP_ItemBase")
     factory = unreal.BlueprintFactory()
-    factory_1 = unreal.DataAssetFactory()
     factory.set_editor_property("parent_class",parent)
-
-    unreal.AssetToolsHelpers.get_asset_tools().create_asset("DA_"+asset_name,asset_package,None,factory_1)
     unreal.AssetToolsHelpers.get_asset_tools().create_asset(asset_name,asset_package,None,factory)
     
-def Generate():
-     GenerateBuilding("/Game/Assets","teda",)
+def Generate(buildingname,buildingpath):
+     GenerateBuilding(buildingpath,buildingname)
 
 
 def printBlueprint():
