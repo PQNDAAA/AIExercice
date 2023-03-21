@@ -3,7 +3,7 @@ import unreal
 
 def GenerateVillagers(asset_package, asset_name):
   
-    parent = unreal.EditorAssetLibrary.load_blueprint_class("/Game/BP_Villagers/Villagers/BP_VillagerBase")
+    parent = unreal.EditorAssetLibrary.load_blueprint_class("/Game/BP_Villagers/Villagers/BP_VillagerCharacter")
     factory = unreal.BlueprintFactory()
     factory.set_editor_property("parent_class",parent)
     unreal.AssetToolsHelpers.get_asset_tools().create_asset(asset_name,asset_package,None,factory)
@@ -11,7 +11,7 @@ def GenerateVillagers(asset_package, asset_name):
 def Generate(villagername,villagerpath):
      GenerateVillagers(villagerpath,villagername)
 
-
+"""
 def printBlueprint():
     for sel in unreal.EditorUtilityLibrary().get_selected_assets():
         print (sel.get_class())
@@ -55,7 +55,7 @@ class PythonTestClass(unreal.BlueprintFunctionLibrary):
         return struct
         # set the default property values
     #bp_cdo.set_editor_property("villagersMax", 1)
-
+"""
 
 def SetVillagersMax(pathbuilding,villagers):
      # get the generated class of the Blueprint (note the _C)
