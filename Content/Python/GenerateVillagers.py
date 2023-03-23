@@ -57,12 +57,40 @@ class PythonTestClass(unreal.BlueprintFunctionLibrary):
     #bp_cdo.set_editor_property("villagersMax", 1)
 """
 
-def SetVillagersMax(pathbuilding,villagers):
-     # get the generated class of the Blueprint (note the _C)
+def SetName(pathbuilding,name):
     bp_gc = unreal.load_object(None, pathbuilding)
-    # get the Class Default Object (CDO) of the generated class
     bp_cdo = unreal.get_default_object(bp_gc)
-    bp_cdo.set_editor_property("villagersMax", villagers)
+    bp_cdo.set_editor_property("Name", name)
+def SetHealth(pathbuilding,health):
+    bp_gc = unreal.load_object(None, pathbuilding)
+    bp_cdo = unreal.get_default_object(bp_gc)
+    bp_cdo.set_editor_property("Health", health)
+def SetDefense(pathbuilding,defense):
+    bp_gc = unreal.load_object(None, pathbuilding)
+    bp_cdo = unreal.get_default_object(bp_gc)
+    bp_cdo.set_editor_property("Defense", defense)
+def SetAttack(pathbuilding,attack):
+    bp_gc = unreal.load_object(None, pathbuilding)
+    bp_cdo = unreal.get_default_object(bp_gc)
+    bp_cdo.set_editor_property("Attack", attack)
+
+def GetName(pathbuilding):
+    bp_gc = unreal.load_object(None, pathbuilding)
+    bp_cdo = unreal.get_default_object(bp_gc)
+    return bp_cdo.get_editor_property("Name")
+def GetHealth(pathbuilding):
+    bp_gc = unreal.load_object(None, pathbuilding)
+    bp_cdo = unreal.get_default_object(bp_gc)
+    return bp_cdo.get_editor_property("Health")
+def GetDefense(pathbuilding):
+    bp_gc = unreal.load_object(None, pathbuilding)
+    bp_cdo = unreal.get_default_object(bp_gc)
+    return bp_cdo.get_editor_property("Defense")
+def GetAttack(pathbuilding):
+    bp_gc = unreal.load_object(None, pathbuilding)
+    bp_cdo = unreal.get_default_object(bp_gc)
+    return bp_cdo.get_editor_property("Attack")
+
 
 def SetStaticMesh(pathbuilding,sm):
     # get the generated class of the Blueprint (note the _C)
