@@ -73,6 +73,10 @@ def SetAttack(pathbuilding,attack):
     bp_gc = unreal.load_object(None, pathbuilding)
     bp_cdo = unreal.get_default_object(bp_gc)
     bp_cdo.set_editor_property("Attack", attack)
+def SetJobs(pathbuilding,jobs):
+    bp_gc = unreal.load_object(None, pathbuilding)
+    bp_cdo = unreal.get_default_object(bp_gc)
+    bp_cdo.set_editor_property("Jobs", jobs)
 
 def GetName(pathbuilding):
     bp_gc = unreal.load_object(None, pathbuilding)
@@ -90,6 +94,10 @@ def GetAttack(pathbuilding):
     bp_gc = unreal.load_object(None, pathbuilding)
     bp_cdo = unreal.get_default_object(bp_gc)
     return bp_cdo.get_editor_property("Attack")
+def GetJobs(pathbuilding):
+    bp_gc = unreal.load_object(None, pathbuilding)
+    bp_cdo = unreal.get_default_object(bp_gc)
+    return bp_cdo.get_editor_property("Jobs")
 
 
 def SetStaticMesh(pathbuilding,sm):
