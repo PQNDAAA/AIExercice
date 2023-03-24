@@ -44,7 +44,7 @@ void UMyBlueprintFunctionLibrary::SetMaterialInstanceStaticSwitchParameterValue(
 			SwitchParam.Value = value;
 		}
 	}
-	Instance->UpdateStaticPermutation(StaticParameters);
+	//Instance->UpdateStaticPermutation(StaticParameters);
 }
 
 
