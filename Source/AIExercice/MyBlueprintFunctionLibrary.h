@@ -4,7 +4,6 @@
 
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
-#include "Materials/MaterialInstance.h"
 #include "MyBlueprintFunctionLibrary.generated.h"
 
 /**
@@ -14,7 +13,7 @@ UCLASS()
 class AIEXERCICE_API UMyBlueprintFunctionLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
-public:
+
 		UFUNCTION(BlueprintCallable , Category = "Custom Message")
 		static void Print(FString message);
 	

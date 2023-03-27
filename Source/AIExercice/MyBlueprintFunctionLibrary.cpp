@@ -4,7 +4,7 @@
 #include "MyBlueprintFunctionLibrary.h"
 
 #include "MyActor.h"
-#include "Engine/PointLight.h"
+#include "Materials/MaterialInstance.h"
 #include "Kismet/GameplayStatics.h"
 
 void UMyBlueprintFunctionLibrary::Print(FString message)
@@ -42,6 +42,7 @@ void UMyBlueprintFunctionLibrary::SetMaterialInstanceStaticSwitchParameterValue(
 		if(SwitchParam.ParameterInfo.Name == ParamaterName)
 		{
 			SwitchParam.Value = value;
+			break;;
 		}
 	}
 	//Instance->UpdateStaticPermutation(StaticParameters);
