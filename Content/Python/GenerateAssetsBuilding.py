@@ -50,13 +50,24 @@ def SetStaticMesh(pathbuilding,sm):
     bp_cdo = unreal.get_default_object(bp_gc)
     bp_cdo.set_editor_property("Static_Mesh_Reference", sm)
 
+def SetMaxResources(path, resources):
+    bp_gc = unreal.load_object(None, path)
+    bp_cdo = unreal.get_default_object(bp_gc)
+    bp_cdo.set_editor_property("maxResources", resources)
+
 def GetStaticMesh(pathbuilding):
 
 # get the generated class of the Blueprint (note the _C)
     bp_gc = unreal.load_object(None, pathbuilding)
     # get the Class Default Object (CDO) of the generated class
     bp_cdo = unreal.get_default_object(bp_gc)
-    
     return bp_cdo.get_editor_property("Static_Mesh_Reference")
+
+def GetMaxResources(path):
+
+    bp_gc = unreal.load_object(None, path)
+    bp_cdo = unreal.get_default_object(bp_gc)
+    return bp_cdo.get_editor_property("maxResources")
+
 
 
