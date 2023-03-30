@@ -11,6 +11,14 @@ def GenerateBuilding(asset_package, asset_name):
 def Generate(buildingname,buildingpath):
      GenerateBuilding(buildingpath,buildingname)
 
+def editDT():
+    my_blueprint = unreal.EditorAssetLibrary.load_blueprint_class("/Game/BP_Items/Items/BP_ItemBase")
+    my_dict = my_blueprint.resourceInventory
+
+    my_dict['key3'] = 'value3'
+
+    my_blueprint.resourceInventory = my_dict
+
 
 def printBlueprint():
     for sel in unreal.EditorUtilityLibrary().get_selected_assets():
