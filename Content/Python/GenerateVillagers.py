@@ -1,4 +1,5 @@
 import unreal
+from unreal import DataTable
 
 
 def GenerateVillagers(asset_package, asset_name):
@@ -7,6 +8,15 @@ def GenerateVillagers(asset_package, asset_name):
     factory = unreal.BlueprintFactory()
     factory.set_editor_property("parent_class",parent)
     unreal.AssetToolsHelpers.get_asset_tools().create_asset(asset_name,asset_package,None,factory)
+
+    dt = unreal.load_object(None,'/Game/Resources/DT_Resources')
+    datatable = unreal.DataTable.
+
+    for row in dt:
+        row.ItemInt = 42
+
+    dt.save_package('/Game/Resources/DT_Resources')
+
     
 def Generate(villagername,villagerpath):
      GenerateVillagers(villagerpath,villagername)
