@@ -1,10 +1,8 @@
 ﻿#pragma once
 
 #include "CoreMinimal.h"
-#include "UObject/ObjectMacros.h"
 #include "Engine/DataTable.h"
 #include "enu.h"
-#include "Microsoft/AllowMicrosoftPlatformTypes.h"
 #include "StructTest.generated.h"
 
 USTRUCT(BlueprintType)
