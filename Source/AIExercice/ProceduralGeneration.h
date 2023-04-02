@@ -4,7 +4,6 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "Containers/Map.h"
 #include "ProceduralGeneration.generated.h"
 
 UCLASS()
@@ -16,15 +15,19 @@ public:
 	// Sets default values for this actor's properties
 
 	AProceduralGeneration();
-	
-/*	UPROPERTY(EditAnywhere, Category="GenerationManager")
-	TArray<FString> MeshNames;
 
-	UPROPERTY(EditAnywhere, Category="GenerationManager")
-	UStaticMesh* Mesh;
+	UPROPERTY(EditAnywhere, Category = "Spawning")
+	UClass* ClassToSpawn;
 
-	UPROPERTY(EditAnywhere, Category="GenerationManager")
-	TArray<UInstancedStaticMeshComponent*> Components;*/
+	UPROPERTY(EditAnywhere, Category = "Spawning")
+	int32 NumToSpawn;
+
+	UPROPERTY(EditAnywhere, Category = "Spawning")
+	FVector SpawnLocation;
+
+	UPROPERTY(EditAnywhere, Category = "Spawning")
+	FRotator SpawnRotation;
+
 	
 protected:
 	// Called when the game starts or when spawned
@@ -35,7 +38,5 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-
-	/*UFUNCTION(BlueprintCallable, Category="GenerationManager")
-	void PrintMap();*/
+	virtual void OnConstruction(const FTransform& Transform) override;
 };

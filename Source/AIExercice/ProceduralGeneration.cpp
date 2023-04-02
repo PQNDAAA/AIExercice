@@ -2,18 +2,20 @@
 
 
 #include "ProceduralGeneration.h"
-
+#include "Components/HierarchicalInstancedStaticMeshComponent.h"
 #include "ComponentUtils.h"
-#include "Components/InstancedStaticMeshComponent.h"
 
 // Sets default values
 AProceduralGeneration::AProceduralGeneration()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+
+	ClassToSpawn = nullptr;
+	NumToSpawn = 0;
+	SpawnLocation = FVector::ZeroVector;
+	SpawnRotation = FRotator::ZeroRotator;
 	
-	USceneComponent* Root = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
-	RootComponent = Root;
 }
 
 // Called when the game starts or when spawned
@@ -28,6 +30,26 @@ void AProceduralGeneration::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+void AProceduralGeneration::OnConstruction(const FTransform& Transform)
+{
+	Super::OnConstruction(Transform);
+
+	UHierarchicalInstancedStaticMeshComponent* InstancedMesh = FindComponentByClass<UHierarchicalInstancedStaticMeshComponent>();
+    if (InstancedMesh && ClassToSpawn)
+    {
+        for (int32 i = 0; i < NumToSpawn; ++i)
+        {
+            FTransform SpawnTransform(SpawnRotation, SpawnLocation, FVector(1.f));
+            AActor* NewActor = GetWorld()->SpawnActorDeferred<AActor>(ClassToSpawn, SpawnTransform);
+            if (NewActor)
+            {
+                NewActor->FinishSpawning(SpawnTransform);
+                InstancedMesh->AddInstance(SpawnTransform);
+            }
+        }
+    }
 }
 
 /*void AProceduralGeneration::PrintMap()
