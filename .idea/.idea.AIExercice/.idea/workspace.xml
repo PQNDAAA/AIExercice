@@ -5,15 +5,7 @@
     <projectFile>Intermediate/ProjectFiles/UE5.vcxproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ac4b71e-2d9e-443a-9ebd-5ad0220b97fe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/AIExercice/StructTest.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/AIExercice/enu.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AIExercice.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/AIExercice.uproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/AIExercice/DataAsset_Test.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/AIExercice/DataAsset_Test.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/AIExercice/MyDataAsset.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/AIExercice/MyDataAsset.h" beforeDir="false" />
-    </list>
+    <list default="true" id="1ac4b71e-2d9e-443a-9ebd-5ad0220b97fe" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -173,6 +165,7 @@
       <workItem from="1680250065010" duration="3284000" />
       <workItem from="1680254013539" duration="302000" />
       <workItem from="1680254695984" duration="2050000" />
+      <workItem from="1680388534261" duration="8984000" />
     </task>
     <servers />
   </component>
