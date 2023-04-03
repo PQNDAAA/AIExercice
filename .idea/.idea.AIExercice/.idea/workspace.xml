@@ -5,7 +5,10 @@
     <projectFile>Intermediate/ProjectFiles/UE5.vcxproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ac4b71e-2d9e-443a-9ebd-5ad0220b97fe" name="Changes" comment="" />
+    <list default="true" id="1ac4b71e-2d9e-443a-9ebd-5ad0220b97fe" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AIExercice/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AIExercice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AIExercice/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -167,6 +170,7 @@
       <workItem from="1680254695984" duration="2050000" />
       <workItem from="1680388534261" duration="8984000" />
       <workItem from="1680451473143" duration="1476000" />
+      <workItem from="1680544616905" duration="301000" />
     </task>
     <servers />
   </component>
