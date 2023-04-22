@@ -63,6 +63,31 @@ def SetMaxResources(path, resources):
     bp_cdo = unreal.get_default_object(bp_gc)
     bp_cdo.set_editor_property("maxResources", resources)
 
+def SetName(path, name):
+    bp_gc = unreal.load_object(None, path)
+    bp_cdo = unreal.get_default_object(bp_gc)
+    bp_cdo.set_editor_property("buildingName", name)
+
+def SetSearchArea(path, searcharea):
+    bp_gc = unreal.load_object(None, path)
+    bp_cdo = unreal.get_default_object(bp_gc)
+    bp_cdo.set_editor_property("searchArea", searcharea)
+
+def SetPlacementArea(path, placementarea):
+    bp_gc = unreal.load_object(None, path)
+    bp_cdo = unreal.get_default_object(bp_gc)
+    bp_cdo.set_editor_property("placementArea", placementarea)
+
+def SetDurability(path, durability):
+    bp_gc = unreal.load_object(None, path)
+    bp_cdo = unreal.get_default_object(bp_gc)
+    bp_cdo.set_editor_property("durability", durability)
+
+def SetJobs(path, jobs):
+    bp_gc = unreal.load_object(None, path)
+    bp_cdo = unreal.get_default_object(bp_gc)
+    bp_cdo.set_editor_property("TargetJobs", jobs)
+
 def GetStaticMesh(pathbuilding):
 
 # get the generated class of the Blueprint (note the _C)
@@ -77,5 +102,34 @@ def GetMaxResources(path):
     bp_cdo = unreal.get_default_object(bp_gc)
     return bp_cdo.get_editor_property("maxResources")
 
+def GetPlacementArea(path):
+
+    bp_gc = unreal.load_object(None, path)
+    bp_cdo = unreal.get_default_object(bp_gc)
+    return bp_cdo.get_editor_property("placementArea")
+
+def GetSearchArea(path):
+
+    bp_gc = unreal.load_object(None, path)
+    bp_cdo = unreal.get_default_object(bp_gc)
+    return bp_cdo.get_editor_property("searchArea")
+
+def GetName(path):
+
+    bp_gc = unreal.load_object(None, path)
+    bp_cdo = unreal.get_default_object(bp_gc)
+    return bp_cdo.get_editor_property("buildingName")
+
+def GetDurability(path):
+
+    bp_gc = unreal.load_object(None, path)
+    bp_cdo = unreal.get_default_object(bp_gc)
+    return bp_cdo.get_editor_property("durability")
+
+def GetJobs(path):
+
+    bp_gc = unreal.load_object(None, path)
+    bp_cdo = unreal.get_default_object(bp_gc)
+    return bp_cdo.get_editor_property("TargetJobs")
 
 
