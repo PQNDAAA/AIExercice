@@ -91,6 +91,10 @@ def SetDurationForBreak(pathbuilding,duration):
     bp_gc = unreal.load_object(None, pathbuilding)
     bp_cdo = unreal.get_default_object(bp_gc)
     bp_cdo.set_editor_property("DurationForBreak", duration)
+def SetUnlockingLevel(pathbuilding,unlockingLevel):
+    bp_gc = unreal.load_object(None, pathbuilding)
+    bp_cdo = unreal.get_default_object(bp_gc)
+    bp_cdo.set_editor_property("unlockingLevel", unlockingLevel)    
 
 def GetName(pathbuilding):
     bp_gc = unreal.load_object(None, pathbuilding)
@@ -116,6 +120,10 @@ def GetDurationForBreak(pathbuilding):
     bp_gc = unreal.load_object(None, pathbuilding)
     bp_cdo = unreal.get_default_object(bp_gc)
     return bp_cdo.get_editor_property("DurationForBreak")
+def GetUnlockingLevel(pathbuilding):
+    bp_gc = unreal.load_object(None, pathbuilding)
+    bp_cdo = unreal.get_default_object(bp_gc)
+    return bp_cdo.get_editor_property("unlockingLevel")
 
 
 def SetStaticMesh(pathbuilding,sm):

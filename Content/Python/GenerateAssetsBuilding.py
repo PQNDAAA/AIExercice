@@ -3,21 +3,13 @@ import unreal
 
 def GenerateBuilding(asset_package, asset_name):
   
-    parent = unreal.EditorAssetLibrary.load_blueprint_class("/Game/BP_Items/Items/BP_ItemBase")
+    parent = unreal.EditorAssetLibrary.load_blueprint_class("/Game/Building/StorageBuilding/BP_StorageBuildingBase")
     factory = unreal.BlueprintFactory()
     factory.set_editor_property("parent_class",parent)
     unreal.AssetToolsHelpers.get_asset_tools().create_asset(asset_name,asset_package,None,factory)
     
 def Generate(buildingname,buildingpath):
      GenerateBuilding(buildingpath,buildingname)
-
-def editDT():
-    my_blueprint = unreal.EditorAssetLibrary.load_blueprint_class("/Game/BP_Items/Items/BP_ItemBase")
-    my_dict = my_blueprint.resourceInventory
-
-    my_dict['key3'] = 'value3'
-
-    my_blueprint.resourceInventory = my_dict
 
 
 def printBlueprint():
@@ -88,6 +80,11 @@ def SetJobs(path, jobs):
     bp_cdo = unreal.get_default_object(bp_gc)
     bp_cdo.set_editor_property("TargetJobs", jobs)
 
+def SetUnlockingLevel(path, unlockingLevel):
+    bp_gc = unreal.load_object(None, path)
+    bp_cdo = unreal.get_default_object(bp_gc)
+    bp_cdo.set_editor_property("unlockingLevel", unlockingLevel)
+
 def GetStaticMesh(pathbuilding):
 
 # get the generated class of the Blueprint (note the _C)
@@ -131,5 +128,11 @@ def GetJobs(path):
     bp_gc = unreal.load_object(None, path)
     bp_cdo = unreal.get_default_object(bp_gc)
     return bp_cdo.get_editor_property("TargetJobs")
+
+def GetUnlockingLevel(path):
+
+    bp_gc = unreal.load_object(None, path)
+    bp_cdo = unreal.get_default_object(bp_gc)
+    return bp_cdo.get_editor_property("unlockingLevel")
 
 
