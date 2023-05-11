@@ -3,7 +3,7 @@ import unreal
 
 def GenerateBuilding(asset_package, asset_name):
   
-    parent = unreal.EditorAssetLibrary.load_blueprint_class("/Game/Building/WorkBuilding/BP_WorkBuildingBase")
+    parent = unreal.EditorAssetLibrary.load_blueprint_class("/Game/Tools/BuildingTool/WorkBuilding/BP_WorkBuildingBase")
     factory = unreal.BlueprintFactory()
     factory.set_editor_property("parent_class",parent)
     unreal.AssetToolsHelpers.get_asset_tools().create_asset(asset_name,asset_package,None,factory)
@@ -69,6 +69,11 @@ def SetUnlockingLevel(path, unlockingLevel):
     bp_gc = unreal.load_object(None, path)
     bp_cdo = unreal.get_default_object(bp_gc)
     bp_cdo.set_editor_property("unlockingLevel", unlockingLevel)
+
+def GetVillagersMax(pathbuilding):
+    bp_gc = unreal.load_object(None, pathbuilding)
+    bp_cdo = unreal.get_default_object(bp_gc)
+    return bp_cdo.get_editor_property("villagersMax")
 
 def GetStaticMesh(pathbuilding):
     bp_gc = unreal.load_object(None, pathbuilding)
