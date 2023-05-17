@@ -1,3 +1,5 @@
+import unreal
+
 def GenerateVillagers(asset_package, asset_name):
   
     parent = unreal.EditorAssetLibrary.load_blueprint_class("/Game/Tools/CharactersTool/Characters/BP/BP_VillagerCharacter")
