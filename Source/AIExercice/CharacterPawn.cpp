@@ -32,7 +32,6 @@ void ACharacterPawn::BeginPlay()
 void ACharacterPawn::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
 
 // Called to bind functionality to input
