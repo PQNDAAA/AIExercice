@@ -26,6 +26,6 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	UFUNCTION(BlueprintCallable, Category="PlayerStart")
-	void PlayerStartLocation(float MapSize,AActor* player);
+	void PlayerStartLocation(float MapSize,AActor* Playertarget);
 	
 };
