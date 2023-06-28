@@ -9,16 +9,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AIExercice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AIExercice/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Landscape/Maps/Test.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Landscape/Maps/Test.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Player/BP/BP_CharacterPawn.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/BP/BP_CharacterPawn.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Player/BP/BP_ThirdPersonGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/BP/BP_ThirdPersonGameMode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TestPaintMode.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Tools/BuildingTool/SimpleBuilding/BP/BP_Building.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Tools/BuildingTool/SimpleBuilding/BP/BP_Building.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Tools/BuildingTool/WidgetsBuilding/WBP_Building_Slots.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Tools/BuildingTool/WidgetsBuilding/WBP_Building_Slots.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Tools/BuildingTool/WorkBuilding/BP/BP_WorkBuildingBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Tools/BuildingTool/WorkBuilding/BP/BP_WorkBuildingBase.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Tools/BuildingTool/WorkBuilding/BP/LumberjackBuilding.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Tools/BuildingTool/WorkBuilding/BP/LumberjackBuilding.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Tools/BuildingTool/WorkBuilding/BP/MinerGoldBuilding.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Tools/BuildingTool/WorkBuilding/BP/MinerGoldBuilding.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Tools/MapEditorTool/BP/BP_BlockGenerated.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Tools/MapEditorTool/BP/BP_BlockGenerated.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/AIExercice/BPManagement_GameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/AIExercice/BPManagement_GameMode.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/AIExercice/BPManagement_GameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/AIExercice/BPManagement_GameMode.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tools/BuildingTool/SimpleBuilding/BP/TestPaintMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Tools/BuildingTool/SimpleBuilding/BP/TestPaintMode.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,6 +177,7 @@
       <workItem from="1687469983513" duration="980000" />
       <workItem from="1687473405805" duration="4983000" />
       <workItem from="1687746122102" duration="1358000" />
+      <workItem from="1687916518213" duration="2457000" />
     </task>
     <servers />
   </component>
