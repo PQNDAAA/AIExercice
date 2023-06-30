@@ -20,10 +20,10 @@ void ABPManagement_GameMode::Tick(float DeltaTime)
 void ABPManagement_GameMode::PlayerStartLocation(float MapSize,AActor* Playertarget)
 {
 	
-	float playerStartLocationWorldY = (MapSize / 2) * 100;
-	float playerStartLocationWorldXZ = playerStartLocationWorldY / 2;
+	float playerStartLocationWorldZ = (MapSize / 1.75f) * 10;
+	float playerStartLocationWorldXY = (MapSize/2)*100;
 
-	Playertarget->SetActorLocation(FVector(playerStartLocationWorldXZ,playerStartLocationWorldY,playerStartLocationWorldXZ));
+	Playertarget->SetActorLocation(FVector(playerStartLocationWorldXY,playerStartLocationWorldXY,playerStartLocationWorldZ));
 	
 }
 

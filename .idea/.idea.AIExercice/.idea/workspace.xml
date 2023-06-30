@@ -7,9 +7,13 @@
   <component name="ChangeListManager">
     <list default="true" id="1ac4b71e-2d9e-443a-9ebd-5ad0220b97fe" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AIExercice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AIExercice/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Landscape/Maps/Test.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Landscape/Maps/Test.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Landscape/Maps/ProceduralGame.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Landscape/Maps/ProceduralGame.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Landscape/Meshes/Tree1/Tree1_LP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Landscape/Meshes/Tree1/Tree1_LP.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Player/BP/BP_CharacterPawn.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/BP/BP_CharacterPawn.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Tools/BuildingTool/SimpleBuilding/BP/TestPaintMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Tools/BuildingTool/SimpleBuilding/BP/TestPaintMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tools/MapEditorTool/BP/BP_BlockGenerated.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Tools/MapEditorTool/BP/BP_BlockGenerated.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tools/ResourceTool/BP/Tree.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Tools/ResourceTool/BP/Tree.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/AIExercice/BPManagement_GameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/AIExercice/BPManagement_GameMode.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,6 +182,7 @@
       <workItem from="1687473405805" duration="4983000" />
       <workItem from="1687746122102" duration="1358000" />
       <workItem from="1687916518213" duration="2457000" />
+      <workItem from="1688085713553" duration="1237000" />
     </task>
     <servers />
   </component>
