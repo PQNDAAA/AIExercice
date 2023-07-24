@@ -5,6 +5,8 @@
 
 #include <algorithm>
 
+#include "GameFramework/SpringArmComponent.h"
+
 // Sets default values
 ACharacterPawn::ACharacterPawn()
 {
@@ -59,6 +61,13 @@ void ACharacterPawn::MoveActorProto(AActor* actor, FVector loc)
 {
 	actor->SetActorLocation(loc);
 }
+
+void ACharacterPawn::CenterCamera(FVector loc,USpringArmComponent* springArmComponent)
+{
+	this->SetActorLocation(FVector(loc.X,loc.Y,this->GetActorLocation().Z));
+	springArmComponent->SetWorldRotation(FRotator(-50,0,0));
+}
+
 
 
 

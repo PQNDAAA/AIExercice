@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/Pawn.h"
+#include "GameFramework/SpringArmComponent.h"
 #include "CharacterPawn.generated.h"
 
 UCLASS()
@@ -32,5 +33,8 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category="ConstructionMode")
 	void MoveActorProto(AActor* actor, FVector loc);
+
+	UFUNCTION(BlueprintCallable, Category="CenterCamera")
+	void CenterCamera(FVector loc,USpringArmComponent* springArmComponent);
 
 };
