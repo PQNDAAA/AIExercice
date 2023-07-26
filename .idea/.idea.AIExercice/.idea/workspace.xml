@@ -6,15 +6,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ac4b71e-2d9e-443a-9ebd-5ad0220b97fe" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AIExercice/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AIExercice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AIExercice/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Landscape/Maps/NewMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Landscape/Maps/NewMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Landscape/Materials/Ground.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Landscape/Materials/Ground.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Landscape/Maps/ProceduralGame.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Landscape/Maps/ProceduralGame.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Landscape/Materials/Ground_Inst.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Landscape/Materials/Ground_Inst.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Landscape/Meshes/Ores/Gold/Gold.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Landscape/Meshes/Ores/Gold/Gold.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Landscape/Meshes/Ores/Gold/Material.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Landscape/Meshes/Ores/Gold/Material.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Landscape/Meshes/Ores/Iron/Iron.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Landscape/Meshes/Ores/Iron/Iron.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Landscape/Meshes/Ores/Iron/Material.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Landscape/Meshes/Ores/Iron/Material.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Landscape/Meshes/Tree1/Tree1_LP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Landscape/Meshes/Tree1/Tree1_LP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Landscape/Meshes/Tree1/green1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Landscape/Meshes/Tree1/green1.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Player/BP/BP_CharacterPawn.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/BP/BP_CharacterPawn.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Tools/MapEditorTool/BP/BP_BlockGenerated.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Tools/MapEditorTool/BP/BP_BlockGenerated.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/AIExercice/CharacterPawn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/AIExercice/CharacterPawn.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/AIExercice/CharacterPawn.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/AIExercice/CharacterPawn.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Systems/TimeSystem/Lights/SunLight.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Systems/TimeSystem/Lights/SunLight.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tools/ResourceTool/Datatable/DT_Resources.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Tools/ResourceTool/Datatable/DT_Resources.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,23 +35,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\Utilisateur\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Utilisateur\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\Utilisateur\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Utilisateur\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Utilisateur\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Utilisateur\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="C++ Project.AIExercice">
     <configuration name="AIExercice" type="CppProject" factoryName="C++ Project">
       <configuration_1>
@@ -190,6 +193,7 @@
       <workItem from="1688085713553" duration="1237000" />
       <workItem from="1688160037898" duration="294000" />
       <workItem from="1690211359175" duration="1710000" />
+      <workItem from="1690403455009" duration="1233000" />
     </task>
     <servers />
   </component>
